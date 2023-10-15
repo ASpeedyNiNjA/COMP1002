@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Christopher Trombly ~ 100051457">
+	<meta name="description" content="COMP1002 Assignment #2">
+	<title>COMP1002 - Assignment 2</title>
+	<link rel="icon" href="images/skull-straw.png"> <!-- Change x-icon to ico format, image not showing in Safari -->
+</head>
+<body>
+
+	<header>
+    <h1>Pixel Pizza <img src="images/skull-straw.png" alt=""></h1>
+	</header>
+	
+  <main>
+    <form name="assignment2" action="pixel-order.php" method="post">
+      <fieldset>
+        <legend>New Customer</legend>
+        <label for="name">Name:</label> 
+        <input type="text" id="name" name="name">
+        <label for="address">Address:</label> <input type="text" id="address" name="address">
+        <label for="phone-number">Phone Number:</label> <input type="tel" id="phone-number" name="phone-number">
+        <label for="email">Email:</label> <input type="email" id="email" name="email">
+      </fieldset>
+
+      <br> <!-- Start of Returning Customer + End of First-Time Customer -->
+
+      <h2>Returning Customer</h2> <!-- Temporary -->
+      <fieldset>
+        <legend>Please enter login info:</legend>
+        <label for="login">Username:</label> <input type="text" id="login" name="login">
+        <label for="password">Password:</label> <input type="password" id="password" name="password">
+      </fieldset>
+
+      <br> <!-- Start of Order Details + End of Login -->
+
+<!-- Fix #1: missing ids in inputs, then matching for attribute in label elements -->
+<!-- Fix #2: add label for all the inputs text that were on the right instead of the left -->
+<!-- Fix #3: Double-check name attributes, what's saved to the database wouldn't currently always be clear what value it's intended to be. -->
+<!-- Fix #4 Indenting above these fix notes -->
+
+      <h2>Order Details</h2> <!-- Temporary -->
+      <fieldset>
+        <label>Pizza Type:</label> 
+        <input type="radio" id="pizza-type" name="pizza-type" value="pepperoni">Pepperoni
+        <input type="radio" id="pizza-type" name="pizza-type" value="cheese">Cheese
+        <input type="radio" id="pizza-type" name="pizza-type" value="hawaiian">Hawaiian<br>
+        <br>
+        <label>Pizza Size:</label>
+        <select name="size">
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+        </select> 
+        <br>
+        <label for="pizza-number">Number of Pizzas:</label> <!-- Don't forget/miss label for="" attribute error here.-->
+        <input type="range" id="number" name="number" min="0" max="5" step="1" value="1"> <!-- Might replace this slider for a breadsticks or meatball appetizer. Use the number input type with each pizza type depending on CSS -->
+        <br>
+        <label>Toppings:</label> 
+        <input type="checkbox" id="toppings" name="toppings" value="bacon">Bacon
+        <input type="checkbox" id="toppings" name="toppings" value="canadian-bacon">Canadian Bacon
+        <input type="checkbox" id="toppings" name="toppings" value="mushrooms">Mushrooms
+        <input type="checkbox" id="toppings" name="toppings" value="tomato">Tomato Slices
+      </fieldset>
+
+      <!-- Do I need three sets of forms, one for each type of pizza, in order to seperate with CSS -->
+
+      <h2><label for="extras">Extra:</label></h2>
+      <fieldset>
+        <br><input type="checkbox" id="extras" name="extra-sauce" value="extra-sauce"> Extra Sauce +$1.99
+        <br><input type="checkbox" id="extras" name="extra-cheese" value="extra-cheese"> Extra Cheese +2.99
+        <br><input type="checkbox" id="extras" name="cutlery" value="cutlery">Cutlery 
+        <br><input type="checkbox" id="extras" name="napkins" value="napkins">Napkins
+      </fieldset>
+
+      <h2>Delivery/Pickup</h2>
+      <fieldset>
+        <input type="radio" id="order" name="pickup" value="pickup">Pickup
+        <input type="radio" id="order" name="delivery" value="delivery">Delivery
+      </fieldset>
+
+      <h2>Drinks</h2>
+      <fieldset>
+        <input type="checkbox"  name="drink" value="cola">Cola
+        <input type="number" id="cola-amount" name="cola-amount" min="0" max="10" step="1"> 
+        <input type="checkbox" name="drink" value="diet-cola">Diet-Cola
+        <input type="number" id="diet-amount" name="diet-amount" min="0" max="10" step="1"> 
+        <input type="checkbox" name="drink" value="see-thru-cola">See-thru Cola
+        <input type="number" id="see-thru-amount" name="see-thru-amount" min="0" max="10" step="1"> 
+        <input type="checkbox" name="drink" value="diet-see-thru-cola">Diet See-thru Cola
+        <input type="number" id="diet-invisible-amount" name="diet-invisible-amount" min="0" max="10" step="1"> 
+      </fieldset>
+
+      <h2>Pixel Order Time</h2>
+      <fieldset>
+        <input type="radio" id="order-time" name="order" value="now">Pizza Now
+        <input type="radio" id="order-time" name="order" value="later">Pizza Later
+        <input type="datetime-local" id="order-time" name="datetime">
+      </fieldset>
+      
+
+    </form>
+  </main>
+  <footer>
+    <p><small>All the copyrights belong to the DLC!</small></p> <!-- Add copyright symbol entity -->
+  </footer>
+</body>
+</html>
