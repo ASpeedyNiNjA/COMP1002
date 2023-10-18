@@ -1,0 +1,71 @@
+
+/* Sets the font family */
+body {
+	font-family: 'Silkscreen', sans-serif;
+}
+
+/* This ruleset is required to also modify the fonts for forms: textfields, dropdown menus */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* font-size: 100%; */
+}
+
+/* fieldset {
+	display: flex;
+} */
+
+h1 {
+text-align: center;
+}
+
+#new {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-color: blue;
+	/* background-color: lightblue; */
+}
+
+#login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-color: green;
+	/* background-color: lightgreen; */
+}  
+
+#order {
+	border-color: red;
+	/* background-color: lightcoral; */
+} 
+
+#extra {
+	display: flex;
+	flex-direction: row;
+	border-color: yellow;
+	/* background-color: lightyellow; */
+}
+
+#how {
+	display: flex;
+	flex-direction: row;
+	border-color: orange;
+	/* background-color: lightgoldenrodyellow; */
+}
+
+#drink {
+	display: flex;
+	flex-direction: row;
+	border-color: pink;
+	/* background-color: lightpink; */
+}
+
+#when {
+	display: flex;
+	flex-direction: row;
+	border-color: purple;
+	
+}
