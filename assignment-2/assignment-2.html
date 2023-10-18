@@ -25,6 +25,7 @@
 
       <!-- New Customer -->
       <section>
+        <h2>New Customer</h2>
         <fieldset id="new">
           <legend>New Customer</legend>
           <label for="name">Name:</label> 
@@ -38,7 +39,7 @@
 
       <!-- Returning Customer -->
       <h2>Returning Customer</h2> 
-      <fieldset id="login">
+      <fieldset id="returning">
         <legend>Please enter login info</legend>
         <label for="login">Username:</label> <input type="text" id="login" name="login">
         <label for="password">Password:</label> <input type="password" id="password" name="password">
@@ -63,7 +64,7 @@
         </select> 
         <br>
         <label for="pizza-number">Number of Pizzas:</label> <!-- Don't forget/miss label for="" attribute error here.-->
-        <input type="range" id="number" name="number" min="0" max="5" step="1" value="1"> <!-- Might replace this slider for a breadsticks or meatball appetizer. Use the number input type with each pizza type depending on CSS -->
+        <input type="range" id="pizza-number" name="number" min="0" max="5" step="1" value="1"> <!-- Might replace this slider for a breadsticks or meatball appetizer. Use the number input type with each pizza type depending on CSS -->
         <br>
         
         <label>Toppings:</label> 
@@ -98,13 +99,13 @@
       <fieldset id="drink">
         <legend>Thirsty?</legend>
         <input type="checkbox" id="cola"  name="cola" value="cola"><label for="cola">Cola</label>
-        <input type="number" id="drink" name="cola-amount" min="0" max="10" step="1" value="0"> 
+        <input type="number" id="cola-amount" name="cola-amount" min="0" max="10" step="1" value="0"> 
         <input type="checkbox" id="diet-cola" name="diet-cola" value="diet-cola"><label for="diet-cola">Diet-Cola</label>
-        <input type="number" id="drink" name="diet-amount" min="0" max="10" step="1" value="0"> 
+        <input type="number" id="diet-amount" name="diet-amount" min="0" max="10" step="1" value="0"> 
         <input type="checkbox" id="invisible-cola" name="invisible-cola" value="see-thru-cola"><label for="invisible-cola">See-thru Cola</label>
-        <input type="number" id="drink" name="invisible-amount" min="0" max="10" step="1" value="0"> 
+        <input type="number" id="invisible-amount" name="invisible-amount" min="0" max="10" step="1" value="0"> 
         <input type="checkbox" id="diet-invisible" name="diet-invisible" value="diet-invisible"><label for="diet-invisible">Diet See-thru Cola</label>
-        <input type="number" id="drink" name="diet-invisible-amount" min="0" max="10" step="1" value="0"> 
+        <input type="number" id="diet-invisible-amount" name="diet-invisible-amount" min="0" max="10" step="1" value="0"> 
       </fieldset>
 
       <!-- Order Time -->
