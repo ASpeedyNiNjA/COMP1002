@@ -25,11 +25,12 @@ text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 750px;
 	border-color: blue;
 	/* background-color: lightblue; */
 }
 
-#login {
+#returning {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
