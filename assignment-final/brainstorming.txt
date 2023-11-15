@@ -1,0 +1,23 @@
+Retro Product Micro-Site
+
+- NES: Nintendo Entertainment System | other systems
+- Drum Kit
+- Fender Stratocaster
+- Crayola [art supplies] *good idea --> play with  colours*
+- Go-Kart Chassis {not feeling it}
+
+
+x Website for Joe Trombly's Automotive x
+- Funny, ironic, I'm dreading the exact thing I'm technically being trained to do the most.
+- I'm not an artist, seeing JT's Auto copycat {is the owner even named JT} with one of those very nice custom car designs driving by yesterday after the gym didn't help my feelings in that prospect.
+- I want to make an app!...
+- It's not a product, it's a service.
+
+
+
+To-do
+
+- Add a fucking sticky navigation
+- JS Global Header & Footer
+- CSS Flexbox
+- CSS 

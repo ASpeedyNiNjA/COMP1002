@@ -1,0 +1,17 @@
+
+/* Navigation Bar Styling */
+ul {
+	list-style-type: none;
+	margin: 0;
+	background-color: grey;
+}
+
+li {
+	display: inline;
+	
+}
+
+
+a:hover {
+	background-color: springgreen;
+}
