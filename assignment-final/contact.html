@@ -11,15 +11,40 @@
 	<link rel="icon" type="image/x-icon" href="images/ps-classic-logo.png">
 </head>
 </head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="company.html">Company</a></li>
-			<li><a href="product.html">Playstation</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	<h1>Contact Information</h1>
+<body id="contact">
+	<header id="js-head"></header>
+	<h1>Sony Playstation Contact Information</h1>
+	<h2>Contact Us</h2>
+	<form name="assignment2" action="playstation-contact" method="post">
+	
+	<!--Full Name -->
+	<label for="name">Full Name:</label> 
+	<input type="text" id="name" name="name">
+
+	<!-- Email -->
+	<label for="email">Email:</label> 
+	<input type="email" id="email" name="email">
+
+	<!-- Message -->
+	<label for="message">Message:</label>
+	<textarea cols="20" rows="2"></textarea>
+
+	<!-- Submit -->
+	<input type="submit" value="Submit this form" />
+	<button type="submit">Submit this form</button>
+
+	</form>
+	<h3>Try Contacting Playstation:</h3>
+	<address>
+		Email: <br> 
+		<a href="mailto:PlaystationPR@sony.com">PlaystationPR@sony.com</a><br>
+		<br>
+		Address:	<br>
+		2207 Brdigepointe Pkwy.<br>
+		San Mateo, CA 94404 <br>
+		USA
+	</address>
+
+	<script src="header-footer.js"></script>
 </body>
 </html>
