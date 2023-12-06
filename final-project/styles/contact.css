@@ -1,0 +1,164 @@
+/* Line 39 is the only difference between this file and style.css, the change is the flex-direction. */
+
+/* Custom Font */
+@font-face {
+	font-family: "zrnic";
+	src: url("../fonts/zrnic/zrnic-rg.otf");
+}
+
+/* Navigation Bar Styling */
+#navbar {
+	background-color: grey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px;
+}
+
+#nav-list {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+.nav-item {
+line-height: 105px;
+width: 150px;
+text-align: center;
+}
+
+.nav-item a {
+	display: block;
+	font-size: large;
+}
+
+/* Sites Styling */
+section {
+	display: flex;
+	flex-direction: column; /* This one line of code is the only difference between style.css & contact.css */
+	justify-content: space-between;
+	/* align-items: ; */
+	margin: 15px;
+}
+
+#playstation {
+	font-family: 'zrnic';
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	}
+	
+.playstation {
+	align-items: center;
+	margin: 0px;
+}
+	
+#playstation h5 {
+	font-size: 2rem;
+}
+	
+#playstation ul {
+	list-style-type: none;
+	background-color: lightgrey;
+}
+
+h1, h2, h3, h4, h5 {
+	font-size: 5rem;
+	background-color: grey;
+	font-family: 'zrnic', serif;
+	width: 100%;
+	flex-shrink: 2;
+}
+
+body {
+	background-color: lightgray;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 2rem;
+}
+
+section {
+background-color: darkgrey;
+align-items: center;
+}
+
+/* Image Specific CSS Adjustments */
+#super-nintendo-playstation {
+width: 50%;
+flex-shrink: 2;
+}
+
+.product {
+width: 50%;
+}
+
+.games img {
+	width: 1000px;
+}
+
+/* Footer Styling */
+footer {
+	margin: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+footer div {
+	width: 450px;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+i {
+	padding: 15px;
+}
+
+/* Anchor Specific Styling */
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	background-color: tomato;
+}
+a:active {
+	background-color: lightskyblue;
+}
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+/* Playstation Themed Nav Bar Colouring */
+/* Triangle Button */
+#triangle:active {
+	background-color: springgreen;
+}
+
+/* Circle Button */
+#circle:hover {
+	background-color: lightskyblue;
+}
+
+#circle:active {
+	background-color: tomato;
+}
+
+/* Cross Button */
+#cross:hover {
+	background-color: violet;
+}
+#cross:active {
+	background-color: lightskyblue;
+}
+
+/* Square Button */
+#square:hover {
+	background-color: springgreen;
+}
+
+#square:active {
+	background-color: violet;
+}
